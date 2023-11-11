@@ -11,3 +11,9 @@ For example, the string "This website is for losers LOL!" would become "Ths wbst
 Note: for this kata y isn't considered a vowel.
 
  """
+
+
+test = "This website is for losers LOL!"
+for i in "aAeEiIoOuU":
+    test = test.replace(i,"") 
+print(test)
