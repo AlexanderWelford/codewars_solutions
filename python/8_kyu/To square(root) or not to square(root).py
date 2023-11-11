@@ -10,3 +10,16 @@ Example
 [4,3,9,7,2,1] -> [2,9,3,49,4,1]
 Notes
 The input array will always contain only positive numbers, and will never be empty or null.} """
+
+#Solution 
+import numpy as np
+def square_or_square_root(arr):
+    return ([int(np.sqrt(i)) if np.sqrt(i).is_integer() else np.square(i) for i in arr])
+
+#Test
+print (square_or_square_root([1,2,3,4,5,6,7,8,9]))
+
+
+
+
+
